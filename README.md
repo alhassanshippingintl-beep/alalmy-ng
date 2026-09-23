@@ -1,2 +1,24 @@
-# alalmy-ng
-Official landing page for Alalmy NG food packing and distribution
+# العالمي NG — الموقع الرسمي
+
+موقع تعريفي لشركة **العالمي NG لتعبئة وتوزيع المواد الغذائية**.
+
+## الروابط
+- الرئيسية: `/`
+- مسار QR الثابت: `/q` (يحول حاليًا إلى `/`)
+- سياسة الخصوصية: `/privacy`
+
+لتغيير وجهة `/q` دون تغيير عنوان الرمز: عدّل `qrDestination` داخل `src/lib/site.ts`.
+
+## تعديل البيانات
+كل بيانات الشركة والمنتج في `src/lib/site.ts`
+- الهاتف: `phoneDisplay` و `phoneTel` و `whatsappUrl`
+- العنوان: `address` و `mapsQuery`
+- الصور: `public/images/` أو ملفات `encoded/`
+
+```bash
+npm install
+npm run dev
+```
+
+## تنبيه طباعة QR
+لا يُرسل QR إلى المطبعة إلا بعد اعتماد الرابط النهائي واختباره على عينة مطبوعة من الكيس.
