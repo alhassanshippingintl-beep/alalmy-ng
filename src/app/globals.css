@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-red: #d3121a;
+  --brand-blue: #1a4fa0;
+  --brand-gold: #c9a227;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #12203a;
+}
+
+.curve-bg {
+  background:
+    radial-gradient(1200px 420px at 100% -10%, rgba(211, 18, 26, 0.08), transparent 55%),
+    radial-gradient(900px 380px at -10% 20%, rgba(26, 79, 160, 0.10), transparent 50%),
+    #ffffff;
+}
+
+.ribbon {
+  background: linear-gradient(135deg, #d3121a 0%, #1a4fa0 100%);
+}
+
+.pack-shadow {
+  filter: drop-shadow(0 28px 28px rgba(18, 58, 120, 0.22));
+}
